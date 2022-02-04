@@ -171,12 +171,10 @@ ${line}
   		<copy todir="${project.tmp}/${project.name}/src">
   			<fileset dir="${project.src}"/>
 	  	</copy>
-	  	<copy todir="${project.tmp}/${project.name}/${folder}">
+<!--	  	<copy todir="${project.tmp}/${project.name}/${folder}">
   			<fileset dir="${project.lib}" excludes="README" />
-	  	</copy>
-	</target>
-	
-	
+	  	</copy>-->
+	</target>	
 	<target name="generate.source" if="is.normal">
 		<antcall target="generate.source.win"/>
 		<antcall target="generate.source.nix"/>
